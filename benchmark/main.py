@@ -4,7 +4,8 @@ import argparse
 import warnings
 from pygod.metric import *
 from pygod.utils import load_data
-from utils import init_model
+from .utils import init_model
+
 
 
 def main(args):

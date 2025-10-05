@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 from torch_geometric.nn import GCN, GATv2Conv
 from torch_geometric.utils import to_dense_adj
-from gat import MultiLayerGATv2
+from .gat import MultiLayerGATv2
 from .decoder import DotProductDecoder
 from .functional import double_recon_loss
 
