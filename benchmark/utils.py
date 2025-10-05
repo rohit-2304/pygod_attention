@@ -1,6 +1,5 @@
 from random import choice
 from pygod.detector import *
-from pyod.models.lof import LOF
 from torch_geometric.nn import MLP
 from sklearn.ensemble import IsolationForest
 
@@ -129,8 +128,6 @@ def init_model(args):
                    gpu=gpu,
                    batch_size=batch_size,
                    backbone=MLP)
-    elif model_name == 'lof':
-        return LOF()
     elif model_name == 'if':
         return IsolationForest()
     elif model_name == 'radar':
